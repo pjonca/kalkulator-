@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kalkulator walutowy</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="font/AnonymousPro-Regular.ttf">
+	<script src="kalkulator.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="menu">
+			<a href="#">Lorem</a>
+			<a href="#">Lorem</a>
+			<a href="#">Lorem</a>
+			<a href="#">Lorem</a>
+		</div>
+		<div id="form">
+		<form name="f">
+			<div class="tytul">
+			<p>Kalkulator walutowy</p>
+			</div>
+			<div id="lewy"></div>
+			<div id="prawy">
+			<input type="number" name="kwota" placeholder="Podaj kwotę w zł:" onfocus="this.placeholder=''" onblur="this.placeholder='Podaj kwotę w zł:'"><br><br>
+			<input type="radio" name="waluta" value="USD"> na dolary<br><br>
+			<input type="radio" name="waluta" value="EUR"> na euro<br><br>
+			<input type="radio" name="waluta" value="GBP"> na funty<br><br>
+			<br>
+			<input type="checkbox" name="obliczvat">
+			Oblicz z tego VAT:<br><br>
+			<input type="number" name="stawkavat" placeholder="Podaj wartość VAT" onfocus="this.placeholder=''" onblur="this.placeholder='Podaj wartość VAT'">%<br>
+			<br><br>
+			<div class="guz">
+			<input type="button" value="Przelicz" onclick="Przelicz()">
+			</div>
+
+				<div id="wynik"></div>
+			</div>
+		</form>
+		</div>
+
+		<div id="footer"></div>
+	</div>
+</body>
+
+</html>
